@@ -1,10 +1,10 @@
 import dash
 import dash_bootstrap_components as dbc
-import dash_html_components as html
 import dash_table
 import dash_core_components as dcc
 from dash.dependencies import Input, Output, State
 
+from dash import html
 from helper_functions import get_player_image_url
 from helper_functions import draw_plotly_court
 from helper_functions import get_shot_plot
@@ -26,7 +26,7 @@ shot_types = np.unique(shot_df.shot_types)
 
 
 app.layout = html.Div([    
-    dbc.Navbar([html.A(dbc.Row([dbc.Col(dbc.NavbarBrand("NBA Advanced Shooting Stats", className="ml-2"))], align="center", no_gutters=True))],color="secondary", dark=True),
+    dbc.Navbar([html.A(dbc.Row([dbc.Col(dbc.NavbarBrand("NBA Advanced Shooting Stats", className="ml-2"))], align="center"))],color="secondary", dark=True),
        
     html.Div([
         dbc.Row([

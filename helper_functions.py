@@ -255,4 +255,3 @@ def get_season_stats(shot_df, player_name):
     season_stats = season_stats.head(1)
     season_stats = season_stats.round(2)
     return season_stats.to_dict('records')
-

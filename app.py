@@ -12,6 +12,7 @@ from helper_functions import get_shot_frequency_plot
 from helper_functions import get_shot_pcts_plot
 from helper_functions import get_pos_number
 from helper_functions import get_season_stats
+from flask_cors import CORS, cross_origin
 
 import pandas as pd
 import numpy as np
@@ -111,4 +112,6 @@ def update_plot(player_name, shot_types, distance_range, hover_data):
     return shot_fig, freq_fig, pct_fig, url, pos_num, season_stats
 
 if __name__ == '__main__':
+    cors = CORS(app)
+    app.config['CORS_HEADERS'] = 'Content-Type'
     app.run_server(host='0.0.0.0', debug=True, port=8050)

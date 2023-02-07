@@ -112,6 +112,3 @@ def update_plot(player_name, shot_types, distance_range, hover_data):
 
 if __name__ == '__main__':
     app.run_server(host='0.0.0.0', debug=True, port=8050)
-
-if __name__ == "__main__":
-    app.run_server(debug=False)

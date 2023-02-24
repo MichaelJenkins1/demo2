@@ -4,7 +4,8 @@ import dash_table
 import dash_core_components as dcc
 from dash.dependencies import Input, Output, State
 import os
-variable1 = os.environ['VARIABLE_1']
+variable1 = os.environ['THIS_IS_A_KEY_1']
+variable2 = os.enviorn['VARIABLE_1']
 
 from dash import html
 from helper_functions import get_player_image_url
@@ -76,7 +77,7 @@ app.layout = html.Div([
                                 40: {'label': '40'},
                                 50: {'label': '50'}},
                                ),])], style = {'width':'100%', 'marginLeft': '5%', 'marginTop': '4%', 'color': 'black'}),
-                    dbc.Row([html.H6('MIKEYYYYYY', style = {'fontWeight':'bold'}),
+                    dbc.Row([html.H6(variable2, style = {'fontWeight':'bold'}),
                     dbc.Col([dcc.Dropdown(
                                 id = 'shot_types',
                                 options=[ {'label': x, 'value': x} for x in shot_types],

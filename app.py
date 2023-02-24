@@ -3,6 +3,7 @@ import dash_bootstrap_components as dbc
 import dash_table
 import dash_core_components as dcc
 from dash.dependencies import Input, Output, State
+variable1 = os.environ['VARIABLE_1']
 
 from dash import html
 from helper_functions import get_player_image_url
@@ -60,7 +61,7 @@ app.layout = html.Div([
                 # Column 2                    
                 dbc.Col([
                     dcc.Graph(id='shot-chart', style = {'height': '250px'}),
-                    dbc.Row([html.H6(VARIABLE_1, style = {'fontWeight':'bold'}),
+                    dbc.Row([html.H6(variable1, style = {'fontWeight':'bold'}),
                     dbc.Col([dcc.RangeSlider(id='distance-slider', 
                                min=0, 
                                max=50, 

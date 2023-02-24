@@ -75,7 +75,7 @@ app.layout = html.Div([
                                 40: {'label': '40'},
                                 50: {'label': '50'}},
                                ),])], style = {'width':'100%', 'marginLeft': '5%', 'marginTop': '4%', 'color': 'black'}),
-                    dbc.Row([html.H6('Shot Types:', style = {'fontWeight':'bold'}),
+                    dbc.Row([html.H6('MIKEYYYYYY', style = {'fontWeight':'bold'}),
                     dbc.Col([dcc.Dropdown(
                                 id = 'shot_types',
                                 options=[ {'label': x, 'value': x} for x in shot_types],

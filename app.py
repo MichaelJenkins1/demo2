@@ -60,7 +60,7 @@ app.layout = html.Div([
                 # Column 2                    
                 dbc.Col([
                     dcc.Graph(id='shot-chart', style = {'height': '250px'}),
-                    dbc.Row([html.H6('Distance (feet):', style = {'fontWeight':'bold'}),
+                    dbc.Row([html.H6(VARIABLE_1, style = {'fontWeight':'bold'}),
                     dbc.Col([dcc.RangeSlider(id='distance-slider', 
                                min=0, 
                                max=50, 

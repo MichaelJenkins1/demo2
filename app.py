@@ -3,6 +3,7 @@ import dash_bootstrap_components as dbc
 import dash_table
 import dash_core_components as dcc
 from dash.dependencies import Input, Output, State
+import os
 variable1 = os.environ['VARIABLE_1']
 
 from dash import html

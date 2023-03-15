@@ -5,7 +5,7 @@ import dash_core_components as dcc
 from dash.dependencies import Input, Output, State
 import os
 variable1 = os.environ['THIS_IS_A_KEY_1']
-variable2 = os.environ['VARIABLE_2']
+variable2 = os.environ['VARIABLE_1']
 
 from dash import html
 from helper_functions import get_player_image_url

@@ -2,8 +2,8 @@ import pandas as pd
 import requests
 
 print("HIHSDOPOSDHFLJKSDHFLKJSFHLKSDFH*************************")
-url = 'https://staging-backend.ludisanalytics.com/v1/api/ludisurl/9389395'
-headers = {'x-api-key': 'vitz-EY7bLeGARQ'}
+url = 'http://localhost:3005/v1/api/ludisurl/00d1a00'
+headers = {'x-api-key': 'equ6MU4l4AGiOoB'}
 
 response = requests.get(url, headers=headers)
 if response.status_code == 200:

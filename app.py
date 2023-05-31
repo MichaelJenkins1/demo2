@@ -1,10 +1,16 @@
 import pandas as pd
+import requests
 
-# Read the CSV file
-airbnb_data = pd.read_csv("http://localhost:3005/v1/api/ludisurl/9e3a5f8")
+url = 'http://localhost:3005/v1/api/ludisurl/00d1a00'
+headers = {'x-api-key': 'vitz-EY7bLeGARQ'}
 
-# View the first 5 rows
-print(airbnb_data.head())
+response = requests.get(url, headers=headers)
+if response.status_code == 200:
+    data = pd.read_csv(response.content)
+    # Use the 'data' DataFrame for further processing
+    print(data.head())
+else:
+    print('Failed to retrieve data. Status code:', response.status_code)
 
 if __name__ == '__main__':
     app.run_server(host='0.0.0.0', debug=True, port=8050)

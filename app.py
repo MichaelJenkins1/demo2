@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 
 print("HIHSDOPOSDHFLJKSDHFLKJSFHLKSDFH*************************")
-url = 'http://localhost:3005/v1/api/ludisurl/00d1a00'
+url = 'https://staging-backend.ludisanalytics.com/v1/api/ludisurl/dc09463'
 headers = {'x-api-key': 'equ6MU4l4AGiOoB'}
 
 response = requests.get(url, headers=headers)

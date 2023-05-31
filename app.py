@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read the CSV file
-airbnb_data = pd.read_csv("http://localhost:3005/data/d6191ff")
+airbnb_data = pd.read_csv("http://localhost:3005/v1/api/ludisurl/9e3a5f8")
 
 # View the first 5 rows
 airbnb_data.head()

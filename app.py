@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 
-url = 'localhost:3005/v1/api/ludisurl/00d1a00'
+url = 'http://localhost:3005/v1/api/ludisurl/00d1a00'
 headers = {'x-api-key': 'vitz-EY7bLeGARQ'}
 
 response = requests.get(url, headers=headers)
